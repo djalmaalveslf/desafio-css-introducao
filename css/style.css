@@ -17,30 +17,111 @@
     color: var(--color-white);
 }
 
+a, a:hover{
+    text-decoration: none;
+    color: unset;
+}
+
 header{
     height: 100px;
     background-color: var(--main-color);
+    display: flex;
+    align-items: center;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .dssuperfit-logo {
     font-size: 18px;
 }
 
+.dssuperfit-nav-rigth{
+    display: flex;
+    align-items: center;
+}
+
 .dssuperfit-nav-rigth a{
     font-size: 14px;
+    margin-left: 10px;
 }
 
-.fitness-space-card{
+.dssuperfit-container{
+    width: 100%;
+    padding: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.dssuperfit-container-cards{
+    display: flex;
+    flex-direction: column;
+}
+
+.dssuperfit-fitness-space-card{
     background-color: var(--gray-color);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
 }
 
-.card-modalities{
+.dssuperfit-fitness-space-card p{
+    color: var(--black-color);
+}
+
+.dssuperfit-fitness-space-card h3{
+    color: var(--black-color);
+    margin-bottom: 20px;
+}
+
+.dssuperfit-card-modalities{
     background-color: var(--secondary-color);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+footer{
+    height: 262px;
+    background-color: var(--black-color);
+    display: flex;
+    align-items: center;
+}
+
+.dssuperfit-footer-content{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.dssuperfit-footer-social-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dssuperfit-social-media-container{
+    display: flex;
+    align-items: center;
+}
+
+.dssuperfit-social-media-container img{
+    margin: 10px 0;
+}
+
+.dssuperfit-social-media-container a{
+    margin-left: 10px;
+}
+
+.dssuperfit-footer-text-container{
+    text-align: center;
 }
 
 .bg-dark-blue{
@@ -49,9 +130,4 @@ nav{
 
 .bg-white{
     background-color: var(--color-white);
-}
-
-footer{
-    height: 262px;
-    background-color: var(--black-color);
 }
